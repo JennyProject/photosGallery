@@ -1,5 +1,5 @@
 :root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  font-family: Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
 
@@ -85,5 +85,41 @@ button:focus-visible {
   }
   button {
     background-color: #f9f9f9;
+  }
+}
+.img_items{
+  text-align: left;
+}
+.img_items img{
+  width: 80%;
+  max-width: 800px;
+}
+.copy{
+  cursor: pointer;
+  color: blue;
+  margin: 20px;
+}
+.img_wrap{
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  margin: 30px;
+}
+.img_cell {
+  display: flex;
+  justify-content: start;
+  flex-wrap: wrap;
+  align-items: stretch;
+  .img_wrap{
+    flex-direction: column;
+    width: 28%;
+    margin: 2%;
+  }
+  img{
+    width: 100%;
+  }
+  .des div{
+    text-align: center;
+    color: #ff9029
   }
 }

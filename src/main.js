@@ -1,5 +1,12 @@
 import { createApp } from 'vue'
-import './style.css'
 import App from './App.vue'
-
-createApp(App).mount('#app')
+import 'element-plus/dist/index.css'
+import './style.scss'
+import './assets/scss/common.scss'
+import router from './router/index'
+import copy from './directives/v-copy.js'
+import UI from '@/components/index.js'
+const app = createApp(App)
+app.use(router)
+app.directive('copy', copy)
+app.use(UI).mount('#app')
